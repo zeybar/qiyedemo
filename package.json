@@ -11,10 +11,10 @@
         }
     },
     "scripts": {
-        "dev": "NUXT_ENV_PAGE=dev nuxt",
-        "build": "NUXT_ENV_PAGE=prod nuxt build",
-        "start": "NUXT_ENV_PAGE=prod nuxt start",
-        "generate": "NUXT_ENV_PAGE=prod nuxt generate"
+        "dev": "cross-env NUXT_ENV_PAGE=dev nuxt",
+        "build": "cross-env NUXT_ENV_PAGE=prod nuxt build",
+        "start": "cross-env NUXT_ENV_PAGE=prod nuxt start",
+        "generate": "cross-env NUXT_ENV_PAGE=prod nuxt generate"
     },
     "keywords": [
         "nuxt.js",
@@ -39,6 +39,7 @@
         "vuex": "^3.0.1"
     },
     "devDependencies": {
+        "cross-env": "^5.2.0",
         "node-sass": "^4.9.3",
         "sass-loader": "^7.1.0",
         "uglifyjs-webpack-plugin": "^2.0.1",
